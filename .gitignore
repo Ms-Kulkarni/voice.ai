@@ -1,5 +1,6 @@
 
 # clerk configuration (can include secrets)
 /.clerk/
-
+/.env
+/.env.local
 /src/generated/prisma
