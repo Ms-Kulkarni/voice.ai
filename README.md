@@ -36,9 +36,6 @@
 | `08-voice-management` | Voice management and cloning |
 | `09-billing` | Billing and usage metering |
 
-```bash
-git checkout 04-backend-infrastructure  # example: jump to Chapter 4
-```
 
 ## Features
 
