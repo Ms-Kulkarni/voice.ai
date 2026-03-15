@@ -1,11 +1,4 @@
-<div align="center">
-
-<img src="https://33uee5uclf.ufs.sh/f/fa600f97-6cf2-4759-8641-3093d13591bf-6rrk6b.png" alt="Resonance" width="720" />
-
-<br />
-<br />
-
-<h1>Resonance</h1>
+<h1>Voice.ai</h1>
 
 <p>The open-source ElevenLabs alternative.</p>
 
@@ -29,14 +22,6 @@
 </div>
 
 <br />
-
-## Tutorial
-
-[![Watch on YouTube](https://img.shields.io/badge/Watch_the_Full_Course-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://cwa.run/resonance-gh-yt)
-
-Learn how to build this entire project from scratch in a **free 12-hour video course** on YouTube. The tutorial covers every feature  - authentication, text-to-speech, voice cloning, billing, deployment, and more.
-
-Each chapter has a matching branch so you can check out the code at any point in the tutorial:
 
 | Branch | Chapter |
 |--------|---------|
@@ -80,7 +65,7 @@ git checkout 04-backend-infrastructure  # example: jump to Chapter 4
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/code-with-antonio/resonance.git
+git clone https://github.com/ms-kulkarni/voice.ai.git
 cd resonance
 npm install
 ```
