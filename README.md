@@ -63,7 +63,7 @@
 
 ```bash
 git clone https://github.com/ms-kulkarni/voice.ai.git
-cd resonance
+cd voice.ai
 npm install
 ```
 
