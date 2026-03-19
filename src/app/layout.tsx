@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Resonance",
-    template: "%s | Resonance"
+    default: "Voice.ai",
+    template: "%s | Voice.ai",
   },
   description: "AI-powered text-to-speech and voice cloning platform",
 };
@@ -29,18 +29,13 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-  
-        <html lang="en">
-          <body
-            className={`${inter.variable} ${geistMono.variable} antialiased`}
-          >
-      
-              {children}
-           
-            <Toaster />
-          </body>
-        </html>
-    
+      <html lang="en">
+        <body className={`${inter.variable} ${geistMono.variable} antialiased`}>
+          {children}
+
+          <Toaster />
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
