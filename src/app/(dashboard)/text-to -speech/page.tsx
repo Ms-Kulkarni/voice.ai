@@ -1,3 +1,21 @@
-export default function TextToSpeechPage() {
-  return <h1>Text To Speech</h1>;
+import type { Metadata } from "next";
+import { TextToSpeechView } from "@/features/dashboard/views/text-to-speech-view";
+import { trpc, HydrateClient, prefetch } from "@/trpc/server";
+
+export const metadata: Metadata = { title: "Text to Speech" };
+
+export default function TextToSpeechPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ text?: string; voiceId?: string }>;
+}) {
+  const { text, voiceId } = await searchParams;
+
+  prefetch(trpc.voices.getAll.queryOptions());
+
+  return (
+    <HydrateClient>
+      <TextToSpeechView initialValues={{ text, voiceId }} />
+    </HydrateClient>
+  );
 }
