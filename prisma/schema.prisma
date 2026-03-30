@@ -4,9 +4,9 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider        = "prisma-client-js"
-  output          = "../src/generated/prisma/client"
-  previewFeatures = ["driverAdapters"]
+  provider = "prisma-client-js"
+  // output          = "../src/generated/prisma/client"
+  // previewFeatures = ["driverAdapters"]
 }
 datasource db {
   provider = "postgresql"

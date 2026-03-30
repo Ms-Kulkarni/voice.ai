@@ -11,16 +11,13 @@ import {
   type PutObjectCommandInput,
 } from "@aws-sdk/client-s3";
 
-import {
-  PrismaClient,
-  type VoiceCategory,
-} from "../src/generated/prisma/client";
+import { PrismaClient, type VoiceCategory } from "@prisma/client";
 
 import { CANONICAL_SYSTEM_VOICE_NAMES } from "../src/features/voices/data/voice-scoping";
 
 const SYSTEM_VOICES_DIR = path.join(
   path.dirname(fileURLToPath(import.meta.url)),
-  "system-voices",
+  "system-voices"
 );
 
 const envSchema = z.object({
@@ -261,11 +258,11 @@ async function seedSystemVoice(name: string) {
 
     throw error;
   }
-};
+}
 
 async function main() {
   console.log(
-    `Seeding ${CANONICAL_SYSTEM_VOICE_NAMES.length} system voices...`,
+    `Seeding ${CANONICAL_SYSTEM_VOICE_NAMES.length} system voices...`
   );
 
   for (const name of CANONICAL_SYSTEM_VOICE_NAMES) {
