@@ -2,17 +2,17 @@
 
 import modal
 
-# Use this to add R2 tokens:
+# 1) Use this to add R2 tokens:
 # modal secret create cloudflare-r2 \
 #   AWS_ACCESS_KEY_ID=<r2-access-key-id> \
 #   AWS_SECRET_ACCESS_KEY=<r2-secret-access-key>
 
-# Use this to test locally:
+# 2) Use this to test locally:
 # modal run chatterbox_tts.py \
 #   --prompt "Hello from Chatterbox [chuckle]." \
 #   --voice-key "voices/system/<voice-id>"
 
-# Use this to test CURL:
+# 3)  Use this to test CURL:
 # curl -X POST "https://<your-modal-endpoint>/generate" \
 #   -H "Content-Type: application/json" \
 #   -H "X-Api-Key: <your-api-key>" \
