@@ -44,7 +44,7 @@ export function TextToSpeechForm({
   const trpc = useTRPC();
   const router = useRouter();
   const createMutation = useMutation(
-    trpc.generations.create.mutationOptions({})
+    trpc.generations.create.mutationOptions({}),
   );
 
   const { checkout } = useCheckout();
@@ -87,4 +87,4 @@ export function TextToSpeechForm({
   });
 
   return <form.AppForm>{children}</form.AppForm>;
-}
+};
