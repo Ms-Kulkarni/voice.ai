@@ -1,0 +1,36 @@
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@prisma/client@7.5.0',
+npm WARN EBADENGINE   required: { node: '^20.19 || ^22.12 || >=24.0' },
+npm WARN EBADENGINE   current: { node: 'v20.12.1', npm: '10.5.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: '@prisma/studio-core@0.21.1',
+npm WARN EBADENGINE   required: { node: '^20.19 || ^22.12 || ^24.0', pnpm: '8' },
+npm WARN EBADENGINE   current: { node: 'v20.12.1', npm: '10.5.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'eslint-visitor-keys@5.0.1',
+npm WARN EBADENGINE   required: { node: '^20.19.0 || ^22.13.0 || >=24' },
+npm WARN EBADENGINE   current: { node: 'v20.12.1', npm: '10.5.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'prisma@7.5.0',
+npm WARN EBADENGINE   required: { node: '^20.19 || ^22.12 || >=24.0' },
+npm WARN EBADENGINE   current: { node: 'v20.12.1', npm: '10.5.0' }
+npm WARN EBADENGINE }
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'validate-npm-package-name@7.0.2',
+npm WARN EBADENGINE   required: { node: '^20.17.0 || >=22.9.0' },
+npm WARN EBADENGINE   current: { node: 'v20.12.1', npm: '10.5.0' }
+npm WARN EBADENGINE }
+npm WARN deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+npm ERR! code 1
+npm ERR! path /project/workspace/node_modules/prisma
+npm ERR! command failed
+npm ERR! command sh -c node scripts/preinstall-entry.js
+npm ERR! ┌────────────────────────────────────────────────────────────────────┐
+npm ERR! │    Prisma only supports Node.js versions 20.19+, 22.12+, 24.0+.    │
+npm ERR! │    Please upgrade your Node.js version.                            │
+npm ERR! └────────────────────────────────────────────────────────────────────┘
+
+npm ERR! A complete log of this run can be found in: /root/.cache/npm/_logs/2026-04-15T08_38_36_769Z-debug-0.log
